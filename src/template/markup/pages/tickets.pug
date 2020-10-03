@@ -1,36 +1,18 @@
 extends ../_template
 block vars
-	- var title = "" + title
+	- var title = "Купить билет"
+	- 
+		var breadcrumbs = [
+			[
+				'Главная',
+				'index.html'
+			],
+			[
+				title
+			]
+		]
 block content
-	.tickets
-		.case
-			.tickets__filter.filter
-				.filter__selects.selects.row
-					- var selectClass = 'selects__item select'
-					- 
-						var selectList  =  [
-							'Название 1',
-							'Название 2',
-							'Название 3',
-							'Название 4',
-							'Название 5',
-							'Название 6',
-							'Название 7',
-						]
-					+select(selectClass, 'Команда', 'team', selectList)
-					+select(selectClass, 'Город', 'city', selectList)
-					+select(selectClass, 'Дата', 'date', selectList)
+	include ../parts/buy	
 
-				.filter__list.row
-					mixin filterItem(text, img, checked)
-						.filter__item.fi.radio(class=checked != undefined ? '--checked' : '')
-							input.fi__input(type="radio" name="fi" value=text checked=checked)
-							label.fi__label
-								if img != undefined
-									span.fi__icon #[img(src="upload/teams/" + img, alt="alt")]
-								span.fi__title= text
-					+filterItem('Все матчи', undefined, 'checked')
-					+filterItem('Cпаpтак','spartak.png')
-					+filterItem('Aвтoмoбилист','auto.png')
-					+filterItem('XK Динамo','dinamo.png')
-					+filterItem('Cалават Юлаeв','salavat.png')
+
+	

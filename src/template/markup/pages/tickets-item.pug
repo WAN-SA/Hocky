@@ -1,5 +1,19 @@
 extends ../_template
 block vars
-	- var title = "" + title
+	- var title = "Билeты: Aвтoмoбилист-Куньлунь РС"
+	- 
+		var breadcrumbs = [
+			[
+				'Главная',
+				'index.html'
+			],
+			[
+				'Купить билет',
+				'tickets.html'
+			],
+			[
+				title
+			]
+		]
 block content
-	
+	include ../parts/match

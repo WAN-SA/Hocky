@@ -1,5 +1,15 @@
 extends ../_template
 block vars
-	- var title = "" + title
+	- var title = "Пример текстовой страницы"
+	- 
+		var breadcrumbs = [
+			[
+				'Главная',
+				'index.html'
+			],
+			[
+				title
+			]
+		]
 block content
-	
+	include ../parts/textpage

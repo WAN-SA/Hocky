@@ -12,6 +12,12 @@ html(lang="ru")
 		link(rel="stylesheet", href="template/styles/css/style.css" + version)
 		include parts/header
 		main.main
+			if !isMain
+				.page
+					.case
+						+breadcrumbs(breadcrumbs)
+						.page__title= title
+						.page__wrap
 			block content
 		include parts/footer
 

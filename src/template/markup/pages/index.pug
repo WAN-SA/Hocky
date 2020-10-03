@@ -1,6 +1,9 @@
 extends ../_template
 block vars
-	- var title = "Главная" + title
+	- var title = "Главная"
 	- var isMain = true
 block content
-	
+	include ../parts/slider
+	include ../parts/preview
+	include ../parts/advantages
+	include ../parts/how-to
