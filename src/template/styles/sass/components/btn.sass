@@ -9,12 +9,18 @@
 	font-size: $fzMain
 	font-family: $ffMain
 	border-radius: 50px
+	transition: .3s
+	cursor: pointer
+	font-weight: 700
 	&.--blue
 		color: #fff
 		background-color: $color-blue
 		&:hover
 			background-color: darken($color-blue, 10%)
+	&.--sm
+		font-size: 13px
+		min-height: 55px
 	&.--md
-		height: 65px
+		min-height: 65px
 	&.--lg
-		height: 70px
+		min-height: 70px

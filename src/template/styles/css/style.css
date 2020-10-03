@@ -135,16 +135,22 @@ img {
   position: relative;
   font-size: 15px;
   font-family: "Inter", sans-serif;
-  border-radius: 50px; }
+  border-radius: 50px;
+  transition: .3s;
+  cursor: pointer;
+  font-weight: 700; }
   .btn.--blue {
     color: #fff;
     background-color: #4871FF; }
     .btn.--blue:hover {
       background-color: #1549ff; }
+  .btn.--sm {
+    font-size: 13px;
+    min-height: 55px; }
   .btn.--md {
-    height: 65px; }
+    min-height: 65px; }
   .btn.--lg {
-    height: 70px; }
+    min-height: 70px; }
 
 .select {
   cursor: pointer; }
@@ -196,10 +202,17 @@ img {
     align-items: center; }
 
 .header {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   background: #1E1E1E;
   color: #EEF2FD;
   padding-top: 20px;
   padding-bottom: 20px; }
+  .header.--main {
+    background: transparent; }
   .header__wrap {
     margin-left: auto;
     align-items: center; }
@@ -319,26 +332,107 @@ img {
     .slider__nav .slick-current {
       color: #4871FF; }
   .slider__arrows {
+    z-index: 10;
     position: absolute;
-    bottom: 0;
+    bottom: 45px;
     right: 50%;
-    transform: translateX(-50%); }
+    margin-right: -555px;
+    transform: translateX(50%); }
 
 .arrows .slick-arrow {
+  z-index: 2;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: 1px solid #AEAEAE;
   background: transparent;
   font-size: 0;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: .3s; }
   .arrows .slick-arrow svg {
     width: 24px;
     height: 24px; }
-  .arrows .slick-arrow.slick-prev svg {
-    margin-left: -2px; }
+    .arrows .slick-arrow svg path {
+      transition: .3s; }
+  .arrows .slick-arrow.slick-prev {
+    margin-right: 10px; }
+    .arrows .slick-arrow.slick-prev svg {
+      margin-left: -2px; }
   .arrows .slick-arrow.slick-next svg {
     margin-left: 2px; }
+  .arrows .slick-arrow:hover {
+    border-color: #EF233A;
+    background-color: #EF233A; }
+    .arrows .slick-arrow:hover svg path {
+      fill: #fff; }
+
+.preview {
+  padding-top: 80px;
+  padding-bottom: 100px; }
+  .preview__title {
+    margin-bottom: 70px; }
+  .preview__list {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: -30px; }
+  .preview__item {
+    display: block;
+    width: calc(100% / 3 - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    padding: 20px 15px 25px;
+    color: #fff;
+    background-color: #30425F; }
+  .preview__data {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px; }
+  .preview__date {
+    max-width: 50%; }
+  .preview__time {
+    max-width: 50%;
+    margin-left: auto; }
+  .preview__teams {
+    padding: 20px 0;
+    border-top: 1px solid #3E5170;
+    border-bottom: 1px solid #3E5170;
+    justify-content: space-between;
+    margin-left: 23px;
+    margin-right: 23px; }
+  .preview__team {
+    width: 150px; }
+  .preview__place {
+    text-align: center;
+    margin-top: 20px; }
+    .preview__place strong {
+      font-weight: 700;
+      font-size: 20px; }
+    .preview__place span {
+      color: #AEAEAE; }
+  .preview__buy {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px; }
+  .preview__more {
+    max-width: 315px;
+    margin-top: 50px; }
+
+.p-team {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .p-team__logo {
+    width: 100px; }
+  .p-team__text {
+    line-height: 21px; }
+  .p-team__name {
+    font-weight: 700; }
+  .p-team__desc {
+    color: #AEAEAE; }
 
 .footer {
   background: #1E1E1E;

@@ -6,13 +6,19 @@
   position: relative;
   font-size: 15px;
   font-family: "Inter", sans-serif;
-  border-radius: 50px; }
+  border-radius: 50px;
+  transition: .3s;
+  cursor: pointer;
+  font-weight: 700; }
   .btn.--blue {
     color: #fff;
     background-color: #4871FF; }
     .btn.--blue:hover {
       background-color: #1549ff; }
+  .btn.--sm {
+    font-size: 13px;
+    min-height: 55px; }
   .btn.--md {
-    height: 65px; }
+    min-height: 65px; }
   .btn.--lg {
-    height: 70px; }
+    min-height: 70px; }

@@ -57,14 +57,17 @@
         .slick-current
             color: $color-blue
     &__arrows
+        z-index: 10
         position: absolute
-        bottom: 0
+        bottom: 45px
         right: 50%
-        transform: translateX(-50%)
+        margin-right: -555px
+        transform: translateX(50%)
 
 
 .arrows
     .slick-arrow
+        z-index: 2
         width: 50px
         height: 50px
         border-radius: 50%
@@ -72,12 +75,22 @@
         background: transparent
         font-size: 0
         cursor: pointer
+        transition: .3s
         svg
             width: 24px
             height: 24px
+            path
+                transition: .3s
         &.slick-prev
+            margin-right: 10px
             svg
                 margin-left: -2px
         &.slick-next
             svg
                 margin-left: 2px
+        &:hover
+            border-color: $color-red
+            background-color: $color-red
+            svg
+                path
+                    fill: #fff

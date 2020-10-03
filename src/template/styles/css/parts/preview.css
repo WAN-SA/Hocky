@@ -1,0 +1,67 @@
+.preview {
+  padding-top: 80px;
+  padding-bottom: 100px; }
+  .preview__title {
+    margin-bottom: 70px; }
+  .preview__list {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: -30px; }
+  .preview__item {
+    display: block;
+    width: calc(100% / 3 - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    padding: 20px 15px 25px;
+    color: #fff;
+    background-color: #30425F; }
+  .preview__data {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px; }
+  .preview__date {
+    max-width: 50%; }
+  .preview__time {
+    max-width: 50%;
+    margin-left: auto; }
+  .preview__teams {
+    padding: 20px 0;
+    border-top: 1px solid #3E5170;
+    border-bottom: 1px solid #3E5170;
+    justify-content: space-between;
+    margin-left: 23px;
+    margin-right: 23px; }
+  .preview__team {
+    width: 150px; }
+  .preview__place {
+    text-align: center;
+    margin-top: 20px; }
+    .preview__place strong {
+      font-weight: 700;
+      font-size: 20px; }
+    .preview__place span {
+      color: #AEAEAE; }
+  .preview__buy {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px; }
+  .preview__more {
+    max-width: 315px;
+    margin-top: 50px; }
+
+.p-team {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .p-team__logo {
+    width: 100px; }
+  .p-team__text {
+    line-height: 21px; }
+  .p-team__name {
+    font-weight: 700; }
+  .p-team__desc {
+    color: #AEAEAE; }

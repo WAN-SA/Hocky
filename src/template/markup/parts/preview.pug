@@ -1,7 +1,7 @@
 mixin pi(el)
     .preview__team.p-team
         .p-team__logo
-            img(src="upload/team/" + el[2], alt="")
+            img(src=el[2], alt="")
         .p-team__text
             .p-team__name= el[0]
             .p-team__desc= el[1]
@@ -19,11 +19,15 @@ mixin pi(el)
                         each team in teams
                             +pi(team)
                     .preview__place #[strong= city + ', ' ] #[span=arena ]
-                    .preview__buy.btn.--blue.--sm Купить билет
-            - for (var i = 1; i < 3; i++)
-                +previewItem('21 сентября', '20:00', [dataTeams[0],dataTeams[1]], 'Санкт-Петербург', 'Арена Балашиха')
-                +previewItem('19 сентября', '18:00', [dataTeams[2],dataTeams[3]], 'Москва', 'Парк Легенд')
-                +previewItem('16 сентября', '15:00', [dataTeams[4],dataTeams[5]], 'Eкaтepинбypг', 'ВТБ Арена')
-                +previewItem('15 сентября', '13:00', [dataTeams[6],dataTeams[7]], 'Москва', 'Арена 2000')
+                    a.preview__buy.btn.--blue.--sm(href="tickets-item.pug") Купить билет
+            +previewItem('21 сентября', '20:00', [dataTeams[0],dataTeams[1]], 'Санкт-Петербург', 'Арена Балашиха')
+            +previewItem('19 сентября', '18:00', [dataTeams[4],dataTeams[3]], 'Москва', 'Парк Легенд')
+            +previewItem('16 сентября', '15:00', [dataTeams[2],dataTeams[5]], 'Eкaтepинбypг', 'ВТБ Арена')
+            +previewItem('15 сентября', '13:00', [dataTeams[6],dataTeams[7]], 'Москва', 'Арена 2000')
+            +previewItem('21 сентября', '20:00', [dataTeams[0],dataTeams[1]], 'Санкт-Петербург', 'Арена Балашиха')
+            +previewItem('19 сентября', '18:00', [dataTeams[4],dataTeams[3]], 'Москва', 'Парк Легенд')
+            +previewItem('16 сентября', '15:00', [dataTeams[2],dataTeams[5]], 'Eкaтepинбypг', 'ВТБ Арена')
+            +previewItem('19 сентября', '18:00', [dataTeams[4],dataTeams[3]], 'Москва', 'Парк Легенд')
+            +previewItem('15 сентября', '13:00', [dataTeams[6],dataTeams[7]], 'Москва', 'Арена 2000')
 
-        a.preview__more.btn.--blue.--lg(href="buy.html") Все матчи
+        a.preview__more.btn.--blue.--lg.mid(href="tickets.html") Все матчи
