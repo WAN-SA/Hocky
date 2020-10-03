@@ -1,0 +1,30 @@
+.select
+	cursor: pointer
+	&__wrap
+		position: relative
+	&__field
+
+	&__list
+		z-index: 10
+		position: absolute
+		top: 100%
+		left: 0
+		right: 0
+		opacity: 0
+		min-width: 200px
+		background-color: #fff
+		visibility: hidden
+		transition: .3s
+		transform: translateY(10px)
+	&.--toggle
+			.select
+				&__list
+					opacity: 1
+					visibility: visible
+					transform: translateY(0px)
+
+		
+	
+	select
+		display: none
+		

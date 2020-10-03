@@ -1,0 +1,22 @@
+.select {
+  cursor: pointer; }
+  .select__wrap {
+    position: relative; }
+  .select__list {
+    z-index: 10;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    min-width: 200px;
+    background-color: #fff;
+    visibility: hidden;
+    transition: .3s;
+    transform: translateY(10px); }
+  .select.--toggle .select__list {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px); }
+  .select select {
+    display: none; }

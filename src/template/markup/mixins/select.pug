@@ -1,0 +1,10 @@
+mixin select(classes, placeholder, name, data)
+	div(class=classes != undefined ? classes : selectClass)
+		.select__wrap
+			.select__field
+				.select__title
+				.select__arrow
+		if data
+			select(data-placeholder=placeholder, name=name)
+				each option in data
+					option(value=option)= option

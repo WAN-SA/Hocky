@@ -1,1 +1,28 @@
-header.header
+mixin logo(classes)
+	a(class=classes href="")
+		.logo__icon
+			img(src="upload/logo.png", alt="alt")
+		.logo__title Официальные билеты на матчи
+header.header(class=isMain ? '--main' : false)
+	.header__case.case.mid.row
+		.header__ham
+				div
+				div
+				div
+		+logo('header__logo logo')
+		.header__wrap.row
+			.header__nav
+				ul
+					li
+						a(href="") Купить билеты
+					li
+						a(href="") Команды
+					li 
+						a(href="") Стадионы
+					li 
+						a(href="") Новости
+					li.--cart
+						a(href="") Корзина #[var 5]
+			.header__divider
+			.header__phone.phone
+				a(href="") +7 (995) 950-50-50  
