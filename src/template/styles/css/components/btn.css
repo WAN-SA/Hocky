@@ -1,0 +1,18 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  border-radius: 50px; }
+  .btn.--blue {
+    color: #fff;
+    background-color: #4871FF; }
+    .btn.--blue:hover {
+      background-color: #1549ff; }
+  .btn.--md {
+    height: 65px; }
+  .btn.--lg {
+    height: 70px; }

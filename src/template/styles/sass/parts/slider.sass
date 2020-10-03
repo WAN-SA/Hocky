@@ -1,2 +1,83 @@
 @import ../_vars
 
+.slider
+    position: relative
+    overflow: hidden
+    &__item
+        color: #fff
+        position: relative
+        .case
+            min-height: 780px
+            display: flex
+            flex-direction: column
+            justify-content: center
+
+    &__title
+        max-width: 600px
+    &__img
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+
+    &__btn
+        max-width: 315px
+        margin-top: 15px
+
+
+    &__nav
+        z-index: 1
+        position: absolute
+        bottom: 50px
+        left: 50%
+        width: 1218px
+        transform: translateX(-50%)
+        color: $color-gray
+        margin-left: -45px
+        .slick-track
+            display: flex
+            transform: none !important
+            &:before, &:after
+                display: none
+        .slick-slide
+            display: flex
+            align-items: center
+            float: none
+            height: auto
+            // width: 
+        &-item
+            float: none
+            cursor: pointer
+            padding-left: 45px
+            padding-right: 45px
+            border-right: 1px solid $color-gray
+            &:last-of-type
+                border-right: none
+        .slick-current
+            color: $color-blue
+    &__arrows
+        position: absolute
+        bottom: 0
+        right: 50%
+        transform: translateX(-50%)
+
+
+.arrows
+    .slick-arrow
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        border: 1px solid $color-gray
+        background: transparent
+        font-size: 0
+        cursor: pointer
+        svg
+            width: 24px
+            height: 24px
+        &.slick-prev
+            svg
+                margin-left: -2px
+        &.slick-next
+            svg
+                margin-left: 2px

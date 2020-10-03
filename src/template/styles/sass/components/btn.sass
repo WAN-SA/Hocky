@@ -1,0 +1,20 @@
+@import ../_vars
+
+.btn
+	display: flex
+	align-items: center
+	justify-content: center
+	text-align: center
+	position: relative
+	font-size: $fzMain
+	font-family: $ffMain
+	border-radius: 50px
+	&.--blue
+		color: #fff
+		background-color: $color-blue
+		&:hover
+			background-color: darken($color-blue, 10%)
+	&.--md
+		height: 65px
+	&.--lg
+		height: 70px
