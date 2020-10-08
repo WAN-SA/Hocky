@@ -1,0 +1,51 @@
+.how-to {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #FAFAFA; }
+  .how-to__title {
+    margin-bottom: 80px; }
+  .how-to__actions {
+    margin-right: 134px; }
+  .how-to__text {
+    width: 698px;
+    color: #808080;
+    line-height: 155%; }
+    .how-to__text p {
+      padding-bottom: 25px; }
+      .how-to__text p:last-of-type {
+        padding-bottom: 0; }
+
+.action__item {
+  width: 290px;
+  position: relative;
+  margin-bottom: 138px; }
+  .action__item::after {
+    content: "";
+    bottom: -90px;
+    left: 6px;
+    width: 1px;
+    height: 75px;
+    display: block;
+    position: absolute;
+    background: #F1F1F1; }
+  .action__item:last-of-type::after {
+    display: none; }
+
+.action__number {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 140%;
+  color: #F1F1F1;
+  position: absolute;
+  display: block;
+  top: -43px;
+  left: -3px;
+  z-index: 1; }
+
+.action__title {
+  color: #333;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  position: relative;
+  z-index: 2; }

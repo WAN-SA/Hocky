@@ -1,0 +1,18 @@
+.teams.row
+	mixin team-item(item)
+		a.teams__item(href="")
+			.teams__icon
+				img(src=item[2], alt="")
+			.teams__text
+				.teams__name= item[0]
+				.teams__town= item[1]
+
+	+team-item(dataTeams[1])
+	+team-item(dataTeams[2])
+	+team-item(dataTeams[0])
+	+team-item(dataTeams[7])
+	+team-item(dataTeams[6])
+	+team-item(dataTeams[5])
+	+team-item(dataTeams[3])
+	+team-item(dataTeams[4])
+	+team-item(dataTeams[8])

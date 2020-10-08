@@ -1,0 +1,40 @@
+.stadiums-page__text {
+  width: 594px;
+  margin-right: 130px; }
+  .stadiums-page__text p {
+    padding-bottom: 20px;
+    color: #808080;
+    line-height: 155%; }
+
+.stadiums-page__info {
+  margin-bottom: 70px; }
+
+.stadiums-page__contacts {
+  margin-bottom: 70px; }
+
+.stadiums-page__item {
+  margin-bottom: 30px;
+  display: flex; }
+  .stadiums-page__item:last-of-type {
+    margin-bottom: 0; }
+
+.stadiums-page__icon {
+  background: #EF233A;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.stadiums-page__desc {
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 155%; }
+
+.stadiums-page__img img {
+  margin-right: 30px; }
+  .stadiums-page__img img:last-of-type {
+    margin-right: 0; }

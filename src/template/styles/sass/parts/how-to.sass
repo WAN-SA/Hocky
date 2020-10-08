@@ -1,2 +1,51 @@
 @import ../_vars
 
+.how-to
+	padding-top: 90px
+	padding-bottom: 90px
+	background-color: #FAFAFA
+	&__title
+		margin-bottom: 80px
+	&__actions
+		margin-right: 134px
+	&__text
+		width: 698px
+		color: #808080
+		line-height: 155%
+		p
+			padding-bottom: 25px
+			&:last-of-type
+				padding-bottom: 0
+.action
+	&__item
+		width: 290px
+		position: relative
+		margin-bottom: 138px
+		&::after
+			content: ""
+			bottom: -90px
+			left: 6px
+			width: 1px
+			height: 75px
+			display: block
+			position: absolute
+			background: #F1F1F1
+		&:last-of-type::after
+			display: none
+	&__number
+		font-size: 50px
+		font-weight: 700
+		line-height: 140%
+		color: #F1F1F1
+		position: absolute
+		display: block
+		top: -43px
+		left: -3px
+		z-index: 1
+	&__title
+		color: #333
+		font-weight: 700
+		font-size: 20px
+		line-height: 140%
+		position: relative
+		z-index: 2

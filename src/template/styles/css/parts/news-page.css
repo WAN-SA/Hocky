@@ -1,0 +1,16 @@
+.news-page__img {
+  border-radius: 30px;
+  width: 594px; }
+
+.news-page__text {
+  color: #808080;
+  line-height: 155%;
+  width: calc( 100% - 594px);
+  padding-left: 30px; }
+  .news-page__text p {
+    margin-bottom: 30px; }
+    .news-page__text p:last-of-type {
+      margin-bottom: 0; }
+
+.news-page__date {
+  margin-bottom: 20px; }
