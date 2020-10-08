@@ -1,4 +1,16 @@
 $(document).ready(function(){
+
+	var ham   = $('#ham'),
+			nav   = $('#nav'),
+			inner = $('html, body');
+
+	ham.on('click', function(event) {
+		ham.toggleClass(cls.toggle);
+		nav.toggleClass(cls.toggle);
+		inner.toggleClass('--no-scroll');
+	});
+
+
 	let cls = {
 		toggle  : '--toggle',
 		selected: '--selected',
@@ -70,7 +82,7 @@ $(document).ready(function(){
 		status: null,
 		Vars: function(block){
 			this.block = block;
-			this.input = this.block.find('inpu');
+			this.input = this.block.find('input');
 			this.name = this.input.attr('name');
 			this.status = this.input.attr('checked');
 			this.value = this.input.val();
@@ -95,11 +107,12 @@ $(document).ready(function(){
 		},
 		Init: function () {
 			this.input = '.check';
-			$(window).on('load', function () {
-				$('body').find('.' + check.class.block).each(function () {
-					check.Filled($(this));
-				})
-			});
+
+
+			$(this.input).each(function () {
+				check.Filled($(this));
+			})
+			
 			$('.' + check.class.block).on('click', function () {
 				check.Click($(this));
 			});
@@ -146,11 +159,9 @@ $(document).ready(function(){
 		},
 		Init: function () {
 			this.input = '.radio input';
-			$(window).on('load', function () {
-				$('body').find('.' + radio.class.block).each(function () {
-					radio.Filled($(this));
-				})
-			});
+			$('body').find('.' + radio.class.block).each(function () {
+				radio.Filled($(this));
+			})
 			$('.' + radio.class.block).on('click', function () {
 				radio.Click($(this));
 			});
@@ -201,5 +212,34 @@ $(document).ready(function(){
 		asNavFor: slider.list,
 		focusOnSelect: true,
 	})
+
+	function IncDec() {
+	  $('.incdec__btn').click(function(event) {
+	    var input = $(this).siblings('.incdec__input'),
+	        value = Number(input.val());
+
+	    if ($(this).hasClass('--minus')) {
+	      if(value > 1) {
+	        input.val(value-1);	
+	      }
+
+
+	    } else if ($(this).hasClass('--plus')){
+	      if(value < 999) {
+	        input.val(value+1);	
+	      }
+	    }
+	  });
+	  $('.incdec__input').keyup(function(event) {
+	    var value = $(this).val();
+	    $(this).val(value.replace(/\D/g,''));
+	  });
+	}
+	IncDec();
+
+	$('.input.--tel .input__field').mask('+7 (000) 000-00-00');
+
+
+
 	
 })

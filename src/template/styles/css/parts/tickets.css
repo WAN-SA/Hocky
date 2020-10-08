@@ -1,0 +1,65 @@
+.tickets__subtitle {
+  margin-top: 90px;
+  margin-bottom: 70px; }
+
+.tickets__filter {
+  margin-bottom: 70px; }
+
+.tickets__list {
+  margin-left: -15px;
+  margin-bottom: -15px;
+  margin-bottom: -30px; }
+
+.tickets__item {
+  width: calc(100% / 2 - 30px);
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  padding: 20px 30px 16px;
+  border: 1px solid #AEAEAE;
+  transition: .3s; }
+  .tickets__item.--blue {
+    border-color: #4871FF; }
+    .tickets__item.--blue:hover {
+      border-color: #EF233A; }
+
+.tickets__team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px; }
+  .tickets__team-img {
+    width: 100px; }
+  .tickets__team-name {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700; }
+  .tickets__team-desc {
+    color: #AEAEAE; }
+
+.tickets__data {
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(100% - 300px);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.tickets__date {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px; }
+
+.tickets__desc {
+  color: #AEAEAE;
+  line-height: 21px;
+  margin-top: 5px; }
+
+.tickets__buy {
+  max-width: 205px;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto; }

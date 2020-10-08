@@ -4,6 +4,8 @@ mixin select(classes, placeholder, name, data)
 			.select__field
 				.select__title
 				.select__arrow
+					<svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.2195 4.89542L7.91359 0.609586C8.0317 0.467701 8.02831 0.241607 7.90601 0.104577C7.78671 -0.0291041 7.59759 -0.0291042 7.47831 0.104577L4.00186 4.13791L0.52542 0.104577C0.405218 -0.0348594 0.21034 -0.0348594 0.090138 0.104577C-0.0300465 0.244055 -0.0300465 0.470128 0.0901379 0.609586L3.78422 4.89542C3.90444 5.03486 4.0993 5.03486 4.2195 4.89542Z" fill="#333333"/></svg>
+
 		if data
 			select(data-placeholder=placeholder, name=name)
 				each option in data

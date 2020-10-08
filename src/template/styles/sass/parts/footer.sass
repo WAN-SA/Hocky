@@ -1,0 +1,98 @@
+@import ../_vars
+
+.footer
+  background: #1E1E1E 
+  color: #EEF2FD
+  padding-top: 35px
+  padding-bottom: 40px
+  .case
+    justify-content: space-between
+  &__item
+    border-right: 1px solid #AEAEAE
+    &:nth-of-type(1)
+      width: 315px
+    &:nth-of-type(2)
+      width: 695px
+      margin-left: auto
+      padding-left: 100px
+      padding-right: 65px
+    &:nth-of-type(3)
+      margin-left: auto
+      padding-top: 5px
+      text-align: right
+    &:last-of-type
+      border-right: none
+  &__copy
+    text-transform: uppercase
+    color: #AEAEAE
+    font-size: 10px
+    margin-left: 49px
+  &__desc
+    width: 186px
+    color: #AEAEAE
+    font-size: 10px
+    font-weight: 400
+    line-height: 140%
+    margin-top: 14px
+  &__nav
+    margin-top: -35px
+    margin-right: -16px
+    ul
+      justify-content: flex-end
+    li
+      &:last-of-type
+        padding-right: 0
+      &:hover
+        a
+          color: #AEAEAE
+      &.--selected
+        a
+          background-color: $color-blue
+        
+    a
+      display: block
+      color: #EEF2FD
+      padding: 18px 16px
+      border-radius: 0 0 5px 5px
+
+
+  &__links
+    margin-top: 55px
+    li
+      margin-right: 30px
+      &:last-of-type
+        margin-right: 0
+    a
+      font-size: 13px
+      color: #AEAEAE
+      &:hover
+        color: #EEF2FD
+    
+  &__phone
+    font-weight: 700
+    line-height: 18px
+  &__dev
+    font-size: 10px
+    line-height: 11px
+    color: #AEAEAE
+    margin-top: 7px
+    a
+      color: #AEAEAE
+      border-color: #AEAEAE
+      &:hover
+        color: #fff
+        border-color: transparent
+
+
+.color-blue
+  color: $color-blue
+
+.b
+  font-weight: 700
+
+.btn-add-cart
+  path
+    transition: .3s
+  &:hover
+    path
+      fill: $color-blue

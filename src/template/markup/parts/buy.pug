@@ -1,32 +1,46 @@
 .tickets
-    .case
-        .tickets__filter.filter
-            .filter__selects.selects.row
-                - var selectClass = 'selects__item select'
-                - 
-                    var selectList  =  [
-                        'Название 1',
-                        'Название 2',
-                        'Название 3',
-                        'Название 4',
-                        'Название 5',
-                        'Название 6',
-                        'Название 7',
-                    ]
-                +select(selectClass, 'Команда', 'team', selectList)
-                +select(selectClass, 'Город', 'city', selectList)
-                +select(selectClass, 'Дата', 'date', selectList)
+	.tickets__filter.filter
+		.filter__selects.selects.row
+			- var selectClass = 'selects__item select'
+			- 
+				var selectList  = [
+					'Название 1',
+					'Название 2',
+					'Название 3',
+					'Название 4',
+					'Название 5',
+					'Название 6',
+					'Название 7',
+				]
+			+select(selectClass, 'Команда', 'team', selectList)
+			+select(selectClass, 'Город', 'city', selectList)
+			+select(selectClass, 'Дата', 'date', selectList)
 
-            .filter__list.row
-                mixin filterItem(text, img, checked)
-                    .filter__item.fi.radio(class=checked != undefined ? '--checked' : '')
-                        input.fi__input(type="radio" name="fi" value=text checked=checked)
-                        label.fi__label
-                            if img != undefined
-                                span.fi__icon #[img(src="upload/teams/" + img, alt="alt")]
-                            span.fi__title= text
-                +filterItem('Все матчи', undefined, 'checked')
-                +filterItem('Cпаpтак','spartak.png')
-                +filterItem('Aвтoмoбилист','auto.png')
-                +filterItem('XK Динамo','dinamo.png')
-                +filterItem('Cалават Юлаeв','salavat.png')
+		.filter__list.row
+			mixin filterItem(text, img, checked)
+				.filter__item.fi.radio(class=checked != undefined ? '--checked' : '')
+					input.fi__input(type="radio" name="fi" value=text checked=checked)
+					label.fi__label
+						if img != undefined
+							span.fi__icon #[img(src="upload/teams/" + img, alt="alt")]
+						span.fi__title= text
+			+filterItem('Все матчи', undefined, 'checked')
+			+filterItem('Cпаpтак','spartak.png')
+			+filterItem('Aвтoмoбилист','auto.png')
+			+filterItem('XK Динамo','dinamo.png')
+			+filterItem('Cалават Юлаeв','salavat.png')
+				
+	.tickets__list.row
+		- var ticketsClasses = '--blue'
+		+match(2, 5, '15:00', '16 сентября', 'Eкaтepинбypг', 'ВТБ Арена')
+		+match(6, 7, '13:00', '15 сентября', 'Москва', 'Арена 2000')
+		+match(0, 1, '20:00', '12 сентября', 'Санкт-Петербург', 'Арена Балашиха')
+		+match(4, 3, '18:00', '9 сентября', 'Москва', 'Парк Легенд')
+		+match(2, 5, '15:00', '16 сентября', 'Eкaтepинбypг', 'ВТБ Арена')
+		+match(6, 7, '13:00', '15 сентября', 'Москва', 'Арена 2000')
+		+match(0, 1, '20:00', '12 сентября', 'Санкт-Петербург', 'Арена Балашиха')
+		+match(4, 3, '18:00', '9 сентября', 'Москва', 'Парк Легенд')
+		+match(2, 5, '15:00', '16 сентября', 'Eкaтepинбypг', 'ВТБ Арена')
+		+match(6, 7, '13:00', '15 сентября', 'Москва', 'Арена 2000')
+		+match(0, 1, '20:00', '12 сентября', 'Санкт-Петербург', 'Арена Балашиха')
+		+match(4, 3, '18:00', '9 сентября', 'Москва', 'Парк Легенд')

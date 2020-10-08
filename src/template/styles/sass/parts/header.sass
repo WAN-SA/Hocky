@@ -1,0 +1,79 @@
+@import ../_vars
+
+.phone
+  a
+    color: #EEF2FD
+    font-weight: 700 
+.logo
+  width: 179px
+  display: flex
+  flex-wrap: wrap
+  &__icon
+    width: 42px
+    height: 45px
+  &__title
+    width: 130px
+    font-size: 13px
+    font-weight: 700
+    text-transform: uppercase
+    color: #EEF2FD
+    margin-left: 7px
+    display: flex
+    align-items: center
+.header
+  z-index: 100
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  background: #1E1E1E
+  color: #EEF2FD
+  padding-top: 20px
+  padding-bottom: 20px
+  &.--main
+    background: transparent
+  &__wrap
+    margin-left: auto
+    align-items: center
+  &__ham
+    display: none
+  &__nav
+    margin-top: -42px
+    li
+      padding-right: 30px 
+      &:last-of-type
+        padding-right: 0
+      
+      &:hover
+        a
+          color: #AEAEAE
+      &.--selected
+        a
+          background-color: $color-blue
+      &.--cart
+        var
+          display: inline-flex
+          align-items: center
+          justify-content: center
+          text-align: center
+          margin-left: 10px
+          width: 25px
+          height: 25px
+          background: #EF233A
+          border-radius: 50%
+          font-size: 13px
+          font-weight: 700
+          color: #fff
+    a
+      display: flex
+      align-items: center
+      color: #EEF2FD
+      padding: 52px 9px 6px
+      line-height: 18px
+      border-radius: 0 0 5px 5px
+      min-height: 84px
+  &__divider
+    border: 1px solid #AEAEAE
+    height: 40px
+    margin-right: 42px
+    margin-left: 42px

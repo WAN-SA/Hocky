@@ -11,17 +11,22 @@ html(lang="ru")
 		title=title
 	body
 		link(rel="stylesheet", href="template/styles/css/style.css" + version)
+		link(rel="stylesheet", href="template/styles/css/responsive.css" + version)
 		include parts/header
 		main.main
 			if !isMain
 				.page
 					.case
-						+breadcrumbs(breadcrumbs)
-						.page__title= title
+						+breadcrumbs(breadcrumbs, 'page__breadcrumbs breadcrumbs')
+						.page__title.h2= title
 						.page__wrap
-			block content
+							block content
+			else
+				block content
 		include parts/footer
 
 		script(src="template/libs/jquery/dist/jquery.js" + version)
 		script(src="template/libs/slick-carousel/slick/slick.min.js" + version)
+		script(src="template/libs/jquery-mask-plugin/dist/jquery.mask.js" + version)
+		script(src="template/libs/fancybox/dist/jquery.fancybox.js" + version)
 		script(src="template/scripts/js/common.js" + version) 

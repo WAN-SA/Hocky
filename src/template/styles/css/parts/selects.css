@@ -1,0 +1,22 @@
+.selects__item {
+  position: relative; }
+  .selects__item.--toggle .select__field {
+    border-radius: 0; }
+  .selects__item:first-of-type .select__field {
+    border-radius: 50px 0 0 50px; }
+  .selects__item:first-of-type.--toggle .select__field {
+    border-radius: 34px 0 0 0; }
+  .selects__item:last-of-type .select__field {
+    border-radius: 0 50px 50px 0; }
+  .selects__item:last-of-type.--toggle .select__field {
+    border-radius: 0 34px 0 0; }
+  .selects__item:last-of-type:after {
+    display: none; }
+  .selects__item:after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    bottom: 12px;
+    right: 0;
+    width: 1px;
+    background-color: #AEAEAE; }

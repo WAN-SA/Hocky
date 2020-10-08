@@ -1,0 +1,46 @@
+mixin cartLine(team1, team2, date, location, s1, s2, price)
+	.cart__line
+		.cart__item.--data
+			.cart__event.row
+				.cart__date=date
+				.cart__location=location
+			.cart__match.row
+				.cart__team
+					.cart__team-name=team1[0]
+					.cart__team-desc=team2[1]
+				.cart__team
+					.cart__team-name=team2[0]
+					.cart__team-desc=team2[1]
+
+		.cart__item.--stadium
+			.cart__stadium
+				.cart__stadium-name=s1
+				.cart__stadium-type=s2
+
+		.cart__item.--price
+			.cart__price.color-blue=price
+
+		.cart__item.--incdec
+			.cart__incdec.incdec
+				.incdec__btn.--minus
+				input.incdec__input(type="tel" maxlength="3" value="1")
+				.incdec__btn.--plus
+
+		.cart__item.--remove
+			.cart__remove Удалить билет
+
+.cart
+	.cart__body
+		+cartLine(dataTeams[0], dataTeams[1], '9 сентября в 18:00', 'Москва, Парк Легенд', 'Premium', '(А, Н, Б, Е, И, Ж)', '5999 ₽')
+		+cartLine(dataTeams[2], dataTeams[3], '10 сентября в 18:00', 'СПБ, Арена Балашиха', 'Premium', '(А, Н, Б, Е, И, Ж)', '1499 ₽')
+		+cartLine(dataTeams[4], dataTeams[5], '11 сентября в 18:00', 'Москва, Парк Легенд', 'Premium', '(А, Н, Б, Е, И, Ж)', '3599 ₽')
+		+cartLine(dataTeams[6], dataTeams[7], '12 сентября в 18:00', 'СПБ, Арена Балашиха', 'Premium', '(А, Н, Б, Е, И, Ж)', '1899 ₽')
+
+	.cart__foot.row
+		.cart__coupon.coupon.row
+			.coupon__input.input.--sm.--border
+				label.input__title Промокод
+				input.input__field(type="text" name="coupon" placeholder="B23AFRT222")
+			button.coupon__btn.btn.--border-blue.--sm Применить
+		.cart__total.color-blue 18 295 ₽
+		buton.cart__order.btn.--blue.--sm Перейти к оформлению заказа

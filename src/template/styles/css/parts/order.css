@@ -1,0 +1,24 @@
+.order {
+  padding-top: 90px; }
+  .order__head {
+    align-items: center;
+    margin-bottom: 70px; }
+  .order__title {
+    width: 535px; }
+  .order__subtitle {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    width: 495px;
+    margin-left: 90px;
+    padding-top: 3px; }
+  .order__col {
+    width: 490px; }
+    .order__col:nth-of-type(even) {
+      margin-left: auto; }
+  .order__input {
+    margin-bottom: 30px; }
+  .order__textarea {
+    width: 100%; }
+  .order__policy {
+    margin-top: 16px; }

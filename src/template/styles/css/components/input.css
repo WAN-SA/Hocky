@@ -1,0 +1,26 @@
+.input__title {
+  display: block;
+  margin-bottom: 10px; }
+
+.input__field {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  border-radius: 30px; }
+
+.input__tooltip {
+  margin-left: 10px; }
+
+.input.--border .input__field {
+  border: 1px solid #EEEEEE; }
+
+.input.--sm .input__title {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.input.--sm .input__field {
+  font-size: 13px;
+  height: 55px;
+  padding-left: 20px;
+  padding-right: 20px; }

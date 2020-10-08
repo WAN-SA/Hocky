@@ -1,2 +1,63 @@
 @import ../_vars
 
+.match
+	padding-bottom: 85px
+	&__inner
+		color: #fff
+		padding: 15px 50px
+		border-radius: 100px
+		align-items: center
+		background-color: $color-blue-dark
+		margin-bottom: 70px
+	&__team
+		display: flex
+		align-items: center
+		width: 260px
+		&-img
+			width: 100px
+		&-text
+			padding-left: 10px
+			width: calc(100% - 100px)
+		&-title
+			font-size: 20px
+			font-weight: 700
+			line-height: 28px
+		&-desc
+			color: $color-gray
+	&__data
+		width: 120px
+		text-align: center
+		line-height: 28px
+		&.--left
+			margin-left: auto
+			margin-right: 65px
+		&.--right
+			margin-right: auto
+		&-title
+			font-size: 20px
+			font-weight: 700
+		&-desc
+			color: $color-gray
+	&__arena
+		display: flex
+		align-items: center
+		justify-content: center
+		position: relative
+		min-height: 515px
+		border: 1px solid #EEEEEE
+		border-radius: 30px
+		&-glass
+			position: absolute
+			top: 20px
+			right: 20px
+		&-img
+			transition: .3s
+		&:hover
+			.match__arena-img
+				transform: scale(.95)
+			
+	&__table
+		width: 100%
+		max-width: 665px
+		margin-left: auto
+		

@@ -1,0 +1,83 @@
+@media screen and (max-width: 992px) {
+  html.--no-scroll, body.--no-scroll {
+    overflow-y: hidden; }
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #30425F; }
+    .header .case {
+      width: 100%; }
+    .header.--main {
+      background: #30425F; }
+    .header__ham {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 25px;
+      margin-left: auto;
+      cursor: pointer;
+      position: relative;
+      z-index: 10; }
+      .header__ham div {
+        width: 100%;
+        height: 2px;
+        margin-bottom: 6px;
+        transition: .3s;
+        position: relative;
+        background-color: #fff; }
+        .header__ham div:last-of-type {
+          margin-bottom: 0; }
+      .header__ham.--toggle div:nth-of-type(1) {
+        top: 8px;
+        transform: rotate(45deg); }
+      .header__ham.--toggle div:nth-of-type(2) {
+        opacity: 0; }
+      .header__ham.--toggle div:nth-of-type(3) {
+        top: -8px;
+        transform: rotate(-45deg); }
+    .header__wrap {
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      position: fixed;
+      top: 66px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      flex-direction: column;
+      background: #30425F;
+      overflow-y: auto;
+      padding: 35px 0;
+      transition: .3s;
+      transform: translateX(-100%);
+      border-top: 1px solid rgba(255, 255, 255, 0.2); }
+      .header__wrap.--toggle {
+        transform: translateX(0%); }
+    .header__divider {
+      display: none; }
+    .header__nav {
+      margin-top: 0;
+      margin-bottom: 30px; }
+      .header__nav ul {
+        flex-direction: column;
+        align-items: center; }
+      .header__nav li {
+        margin-bottom: 14px; }
+        .header__nav li:last-of-type {
+          margin-bottom: 0; }
+        .header__nav li.--selected a {
+          color: #EEF2FD;
+          background-color: transparent; }
+        .header__nav li.--selected:hover a {
+          color: #fff; }
+      .header__nav a {
+        padding: 0;
+        font-size: 18px;
+        min-height: 26px; }
+    .header__phone {
+      font-size: 21px; } }

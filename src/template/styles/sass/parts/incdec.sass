@@ -1,0 +1,38 @@
+@import ../_vars
+
+.incdec
+	display: flex
+	align-items: center
+	justify-content: center
+	background: #EEEEEE
+	border-radius: 30px
+	height: 45px
+	&__btn
+		width: 30px
+		height: 100%
+		position: relative
+		cursor: pointer
+		&:before, &:after
+			content: ''
+			position: absolute
+			top: 50%
+			left: 50%
+			width: 8px
+			height: 2px
+			margin-top: -1px
+			margin-left: -4px
+			background-color: $colorMain
+		&.--plus
+			&:after
+				transform: rotate(90deg)
+	&__input
+		width: calc(100% - 60px)
+		display: block
+		font-size: 14px
+		font-family: $ffMain
+		color: $colorMain
+		height: 100%
+		background-color: transparent
+		text-align: center
+		&::placeholder
+			opacity: 1

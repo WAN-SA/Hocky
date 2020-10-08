@@ -1,0 +1,50 @@
+@import ../_vars
+
+.checkbox
+	&__field
+		display: none
+	&__label
+		display: inline-flex
+		flex-wrap: wrap
+		cursor: pointer
+	&__box
+		width: 15px
+		height: 15px
+		border-radius: 2px
+		border: 2px solid $color-blue
+		position: relative
+		transition: .3s
+		svg
+			position: absolute
+			top: 50%
+			left: 50%
+			margin-top: 1px
+			transform: translate(-50%,-50%) scale(0)
+			opacity: 0
+			transition: .3s
+
+	&__text
+		line-height: 14px
+		padding-top: 1px
+		padding-left: 10px
+		display: inline-block
+		a
+			border-color: $colorMain
+			&:hover
+				color: $color-gray
+				border-color: transparent
+
+	&.--checked
+		.checkbox
+			&__box
+				background-color: $color-blue
+				svg
+					opacity: 1
+					transform: translate(-50%,-50%) scale(1)
+
+
+	&.--sm
+		.checkbox
+			&__text
+				font-size: 10px
+		

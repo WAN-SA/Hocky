@@ -1,0 +1,6 @@
+mixin ticketsTeam(item, classes)
+	.tickets__team(class=classes)
+		.tickets__team-img
+			img(src=item[2], alt="")
+		.tickets__team-name=item[0]
+		.tickets__team-desc=item[1]

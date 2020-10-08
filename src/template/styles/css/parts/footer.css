@@ -1,0 +1,87 @@
+.footer {
+  background: #1E1E1E;
+  color: #EEF2FD;
+  padding-top: 35px;
+  padding-bottom: 40px; }
+  .footer .case {
+    justify-content: space-between; }
+  .footer__item {
+    border-right: 1px solid #AEAEAE; }
+    .footer__item:nth-of-type(1) {
+      width: 315px; }
+    .footer__item:nth-of-type(2) {
+      width: 695px;
+      margin-left: auto;
+      padding-left: 100px;
+      padding-right: 65px; }
+    .footer__item:nth-of-type(3) {
+      margin-left: auto;
+      padding-top: 5px;
+      text-align: right; }
+    .footer__item:last-of-type {
+      border-right: none; }
+  .footer__copy {
+    text-transform: uppercase;
+    color: #AEAEAE;
+    font-size: 10px;
+    margin-left: 49px; }
+  .footer__desc {
+    width: 186px;
+    color: #AEAEAE;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-top: 14px; }
+  .footer__nav {
+    margin-top: -35px;
+    margin-right: -16px; }
+    .footer__nav ul {
+      justify-content: flex-end; }
+    .footer__nav li:last-of-type {
+      padding-right: 0; }
+    .footer__nav li:hover a {
+      color: #AEAEAE; }
+    .footer__nav li.--selected a {
+      background-color: #4871FF; }
+    .footer__nav a {
+      display: block;
+      color: #EEF2FD;
+      padding: 18px 16px;
+      border-radius: 0 0 5px 5px; }
+  .footer__links {
+    margin-top: 55px; }
+    .footer__links li {
+      margin-right: 30px; }
+      .footer__links li:last-of-type {
+        margin-right: 0; }
+    .footer__links a {
+      font-size: 13px;
+      color: #AEAEAE; }
+      .footer__links a:hover {
+        color: #EEF2FD; }
+  .footer__phone {
+    font-weight: 700;
+    line-height: 18px; }
+  .footer__dev {
+    font-size: 10px;
+    line-height: 11px;
+    color: #AEAEAE;
+    margin-top: 7px; }
+    .footer__dev a {
+      color: #AEAEAE;
+      border-color: #AEAEAE; }
+      .footer__dev a:hover {
+        color: #fff;
+        border-color: transparent; }
+
+.color-blue {
+  color: #4871FF; }
+
+.b {
+  font-weight: 700; }
+
+.btn-add-cart path {
+  transition: .3s; }
+
+.btn-add-cart:hover path {
+  fill: #4871FF; }
