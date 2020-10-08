@@ -1,0 +1,21 @@
+.breadcrumbs__list {
+  display: flex;
+  flex-wrap: wrap; }
+
+.breadcrumbs__item:after {
+  content: '>';
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.breadcrumbs__item:last-of-type:after {
+  display: none; }
+
+.breadcrumbs__link {
+  opacity: 0.8; }
+  .breadcrumbs__link:hover {
+    opacity: 1;
+    border-color: #333333; }

@@ -1,2 +1,56 @@
 @import ../_vars
 
+
+.stadiums
+	margin-left: -15px
+	margin-right: -15px
+	margin-bottom: -30px
+	&__item
+		position: relative
+		margin-left: 15px
+		margin-right: 15px
+		margin-bottom: 30px
+		width: calc( 100% / 3 - 30px )
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 386px
+		border-radius: 30px		
+		overflow: hidden
+		padding: 20px
+		&:hover
+			.stadiums
+				&__img
+					transform: scale(1.05)
+					&::before
+						background: rgba(3, 1, 11, 0.1)
+				&__title
+					opacity: 0
+	&__img
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+		z-index: 1
+		transition: .5s
+		&::before
+			content: ""
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			z-index: 3
+			background: rgba(3, 1, 11, 0.5)
+			transition: .3s
+	&__title
+		position: relative
+		z-index: 3
+		font-size: 20px
+		color: #EEF2FD
+		font-weight: 700
+		transition: .3s

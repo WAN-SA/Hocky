@@ -1,0 +1,27 @@
+.table table {
+  font-size: 20px;
+  border-collapse: collapse;
+  width: 100%; }
+
+.table thead td {
+  height: 90px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #30425F;
+  overflow: hidden;
+  border-top: none; }
+  .table thead td:first-of-type {
+    border-radius: 20px 0 0 0;
+    border-left: none; }
+  .table thead td:last-of-type {
+    border-radius: 0 20px 0 0;
+    border-right: none; }
+
+.table td {
+  border: 1px solid #F1F1F1;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 84px; }
+  .table td:nth-of-type(1) {
+    text-align: left; }

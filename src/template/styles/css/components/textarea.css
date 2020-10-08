@@ -1,0 +1,23 @@
+.textarea__title {
+  display: block;
+  margin-bottom: 10px; }
+
+.textarea__field {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  border-radius: 30px;
+  resize: none; }
+
+.textarea.--border .textarea__field {
+  border: 1px solid #EEEEEE; }
+
+.textarea.--sm .textarea__title {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.textarea.--sm .textarea__field {
+  font-size: 13px;
+  height: 80px;
+  padding: 14px 20px; }

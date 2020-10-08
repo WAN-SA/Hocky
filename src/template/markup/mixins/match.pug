@@ -1,0 +1,16 @@
+mixin match(team1, team2, time, date, city, arena, show)
+	.tickets__item(class=ticketsClasses)
+		.tickets__match.row
+			//- if team1
+			+ticketsTeam(dataTeams[team1], '--home')
+			.tickets__data
+				.tickets__date
+					p= time
+					p= date
+				.tickets__desc
+					p= city + ', '
+					p= arena
+			//- if team2
+			+ticketsTeam(dataTeams[team2], '--away')
+		- if (ticketsBuy == true)
+			a.tickets__buy.btn.--xs.--blue.--hover-red(href="tickets-item.html") Купить билет

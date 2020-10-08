@@ -1,0 +1,33 @@
+mixin pi(el)
+    .preview__team.p-team
+        .p-team__logo
+            img(src=el[2], alt="")
+        .p-team__text
+            .p-team__name= el[0]
+            .p-team__desc= el[1]
+
+.preview
+    .case
+        .preview__title.h2 Ближайшие матчи КХЛ
+        .preview__list.row
+            mixin previewItem(date, time, teams, city, arena)
+                .preview__item
+                    .preview__data.row
+                        .preview__date=date
+                        .preview__time=time
+                    .preview__teams.row
+                        each team in teams
+                            +pi(team)
+                    .preview__place #[strong= city + ', ' ] #[span=arena ]
+                    a.preview__buy.btn.--blue.--sm(href="tickets-item.html") Купить билет
+            +previewItem('21 сентября', '20:00', [dataTeams[0],dataTeams[1]], 'Санкт-Петербург', 'Арена Балашиха')
+            +previewItem('19 сентября', '18:00', [dataTeams[4],dataTeams[3]], 'Москва', 'Парк Легенд')
+            +previewItem('16 сентября', '15:00', [dataTeams[2],dataTeams[5]], 'Eкaтepинбypг', 'ВТБ Арена')
+            +previewItem('15 сентября', '13:00', [dataTeams[6],dataTeams[7]], 'Москва', 'Арена 2000')
+            +previewItem('21 сентября', '20:00', [dataTeams[0],dataTeams[1]], 'Санкт-Петербург', 'Арена Балашиха')
+            +previewItem('19 сентября', '18:00', [dataTeams[4],dataTeams[3]], 'Москва', 'Парк Легенд')
+            +previewItem('16 сентября', '15:00', [dataTeams[2],dataTeams[5]], 'Eкaтepинбypг', 'ВТБ Арена')
+            +previewItem('19 сентября', '18:00', [dataTeams[4],dataTeams[3]], 'Москва', 'Парк Легенд')
+            +previewItem('15 сентября', '13:00', [dataTeams[6],dataTeams[7]], 'Москва', 'Арена 2000')
+
+        a.preview__more.btn.--blue.--lg.mid(href="tickets.html") Все матчи

@@ -1,0 +1,35 @@
+.incdec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #EEEEEE;
+  border-radius: 30px;
+  height: 45px; }
+  .incdec__btn {
+    width: 30px;
+    height: 100%;
+    position: relative;
+    cursor: pointer; }
+    .incdec__btn:before, .incdec__btn:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 8px;
+      height: 2px;
+      margin-top: -1px;
+      margin-left: -4px;
+      background-color: #333333; }
+    .incdec__btn.--plus:after {
+      transform: rotate(90deg); }
+  .incdec__input {
+    width: calc(100% - 60px);
+    display: block;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    color: #333333;
+    height: 100%;
+    background-color: transparent;
+    text-align: center; }
+    .incdec__input::placeholder {
+      opacity: 1; }

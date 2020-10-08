@@ -1,0 +1,58 @@
+.match {
+  padding-bottom: 85px; }
+  .match__inner {
+    color: #fff;
+    padding: 15px 50px;
+    border-radius: 100px;
+    align-items: center;
+    background-color: #30425F;
+    margin-bottom: 70px; }
+  .match__team {
+    display: flex;
+    align-items: center;
+    width: 260px; }
+    .match__team-img {
+      width: 100px; }
+    .match__team-text {
+      padding-left: 10px;
+      width: calc(100% - 100px); }
+    .match__team-title {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 28px; }
+    .match__team-desc {
+      color: #AEAEAE; }
+  .match__data {
+    width: 120px;
+    text-align: center;
+    line-height: 28px; }
+    .match__data.--left {
+      margin-left: auto;
+      margin-right: 65px; }
+    .match__data.--right {
+      margin-right: auto; }
+    .match__data-title {
+      font-size: 20px;
+      font-weight: 700; }
+    .match__data-desc {
+      color: #AEAEAE; }
+  .match__arena {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 515px;
+    border: 1px solid #EEEEEE;
+    border-radius: 30px; }
+    .match__arena-glass {
+      position: absolute;
+      top: 20px;
+      right: 20px; }
+    .match__arena-img {
+      transition: .3s; }
+    .match__arena:hover .match__arena-img {
+      transform: scale(0.95); }
+  .match__table {
+    width: 100%;
+    max-width: 665px;
+    margin-left: auto; }

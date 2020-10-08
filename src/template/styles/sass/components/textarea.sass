@@ -1,0 +1,28 @@
+@import ../_vars
+
+.textarea
+	&__title
+		display: block
+		margin-bottom: 10px
+	&__field
+		display: block
+		width: 100%
+		font-size: $fzMain
+		font-family: $ffMain
+		border-radius: 30px
+		resize: none
+
+	&.--border
+		.textarea
+			&__field
+				border: 1px solid #EEEEEE
+	&.--sm
+		.textarea
+			&__title
+				padding-left: 10px
+				padding-right: 10px
+			&__field
+				font-size: 13px
+				height: 80px
+				padding: 14px 20px	
+		

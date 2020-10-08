@@ -1,0 +1,17 @@
+.pay {
+  border: 1px solid #EEEEEE;
+  border-radius: 30px;
+  padding: 50px; }
+  .pay__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 33px; }
+  .pay__item {
+    margin-bottom: 20px; }
+    .pay__item:last-of-type {
+      margin-bottom: 0; }
+  .pay__btn {
+    width: 100%;
+    max-width: 250px;
+    margin-top: 85px; }

@@ -3,7 +3,20 @@
 	&__wrap
 		position: relative
 	&__field
-
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		background-color: #EEEEEE
+		height: 60px
+		padding-left: 20px
+		padding-right: 20px
+		min-width: 205px
+		transition: .3s
+	&__title
+		width: calc(100% - 8px)
+		padding-right: 10px
+	&__arrow
+		width: 8px
 	&__list
 		z-index: 10
 		position: absolute
@@ -16,12 +29,18 @@
 		visibility: hidden
 		transition: .3s
 		transform: translateY(10px)
+		background-color: #EEEEEE
+	&__item
+		padding: 6px 20px
 	&.--toggle
 			.select
+				&__field
+					border-radius: 20px 20px 0 0
 				&__list
 					opacity: 1
 					visibility: visible
 					transform: translateY(0px)
+				
 
 		
 	

@@ -1,0 +1,37 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  border-radius: 50px;
+  transition: .3s;
+  cursor: pointer;
+  font-weight: 700; }
+  .btn.--blue {
+    color: #fff;
+    background-color: #4871FF; }
+    .btn.--blue:hover {
+      background-color: #1549ff; }
+  .btn.--border-blue {
+    color: #4871FF;
+    border: 1px solid #4871FF;
+    background-color: transparent; }
+    .btn.--border-blue:hover {
+      color: #fff;
+      background-color: #4871FF; }
+  .btn.--hover-red:hover {
+    color: #fff;
+    background-color: #EF233A; }
+  .btn.--xs {
+    font-size: 13px;
+    min-height: 46px; }
+  .btn.--sm {
+    font-size: 13px;
+    min-height: 55px; }
+  .btn.--md {
+    min-height: 65px; }
+  .btn.--lg {
+    min-height: 70px; }

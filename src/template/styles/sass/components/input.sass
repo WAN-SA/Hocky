@@ -1,0 +1,30 @@
+@import ../_vars
+
+.input
+	&__title
+		display: block
+		margin-bottom: 10px
+	&__field
+		display: block
+		width: 100%
+		font-size: $fzMain
+		font-family: $ffMain
+		border-radius: 30px
+	&__tooltip
+		margin-left: 10px
+
+	&.--border
+		.input
+			&__field
+				border: 1px solid #EEEEEE
+	&.--sm
+		.input
+			&__title
+				padding-left: 10px
+				padding-right: 10px
+			&__field
+				font-size: 13px
+				height: 55px
+				padding-left: 20px
+				padding-right: 20px
+		

@@ -2,6 +2,21 @@
   cursor: pointer; }
   .select__wrap {
     position: relative; }
+  .select__field {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #EEEEEE;
+    height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: 205px;
+    transition: .3s; }
+  .select__title {
+    width: calc(100% - 8px);
+    padding-right: 10px; }
+  .select__arrow {
+    width: 8px; }
   .select__list {
     z-index: 10;
     position: absolute;
@@ -13,7 +28,12 @@
     background-color: #fff;
     visibility: hidden;
     transition: .3s;
-    transform: translateY(10px); }
+    transform: translateY(10px);
+    background-color: #EEEEEE; }
+  .select__item {
+    padding: 6px 20px; }
+  .select.--toggle .select__field {
+    border-radius: 20px 20px 0 0; }
   .select.--toggle .select__list {
     opacity: 1;
     visibility: visible;

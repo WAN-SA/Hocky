@@ -1,0 +1,59 @@
+.order
+	.order__head.row
+		.order__title.h2 Оформление заказа
+		.order__subtitle Корзина автоматически очищается если заказ не оформлен в течении 20 минут
+
+	.order__body.row
+		.order__col.row
+			.order__input.input.--sm.--border
+				label.input__title Имя
+					span.input__tooltip.tooltip
+						span.tooltip__icon ?
+						span.tooltip__text Текст текст текст текст текст текст текст текст текст текст текст текст текст
+				input.input__field(type="text" name="" placeholder="Ваше имя")
+
+			.order__input.input.--sm.--border.right
+				label.input__title Фамилия
+					span.input__tooltip.tooltip
+						span.tooltip__icon ?
+						span.tooltip__text Текст текст текст текст текст текст текст текст текст текст текст текст текст
+				input.input__field(type="text" name="" placeholder="Ваша фамилия")
+
+			.order__input.input.--sm.--border.--tel
+				label.input__title Телефон
+					span.input__tooltip.tooltip
+						span.tooltip__icon ?
+						span.tooltip__text Текст текст текст текст текст текст текст текст текст текст текст текст текст
+				input.input__field(type="text" name="" placeholder="Ваш телефон")
+
+			.order__input.input.--sm.--border.right
+				label.input__title E-mail
+					span.input__tooltip.tooltip
+						span.tooltip__icon ?
+						span.tooltip__text Текст текст текст текст текст текст текст текст текст текст текст текст текст
+				input.input__field(type="text" name="" placeholder="Ваша почта")
+
+			.order__textarea.textarea.--sm.--border
+				label.textarea__title Сообщение
+				textarea.textarea__field(name="" placeholder="Ваше сообщение")
+
+
+		.order__col
+			.order__pay.pay
+				.pay__title Выберите удобный способ оплаты:
+				.pay__list
+					.pay__item.rdo.radio
+						input.rdo__input(type="radio" value="1" name="pay" checked="checked")
+						label.rdo__label Онлайн-оплата (получаете электронный билет)
+					.pay__item.rdo.radio
+						input.rdo__input(type="radio" value="2" name="pay")
+						label.rdo__label Оплата наличными (доставим ваш билет)
+				button.pay__btn.btn.--sm.--blue Оформить заказ
+
+		.order__col
+			.order__policy.checkbox.check.--sm
+				input.checkbox__field(type="checkbox" checked="checked")
+				label.checkbox__label
+					span.checkbox__box
+						<svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.43382 0.140216C9.24689 -0.0467388 8.94381 -0.0467388 8.75683 0.140216L3.0217 5.87541L0.817204 3.67092C0.630268 3.48396 0.32719 3.48398 0.140216 3.67092C-0.0467388 3.85785 -0.0467388 4.16093 0.140216 4.34789L2.6832 6.89084C2.87008 7.07777 3.17339 7.07764 3.36019 6.89084L9.43382 0.817204C9.62078 0.630268 9.62076 0.327172 9.43382 0.140216Z" fill="#EEF2FD"/></svg>
+					span.checkbox__text Я согласен на обработку персональных данных и правилами #[a(href="" target="_blank") оферты].

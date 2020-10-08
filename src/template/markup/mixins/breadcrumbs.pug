@@ -1,5 +1,5 @@
-mixin breadcrumbs(data)
-    .breadcrumbs
+mixin breadcrumbs(data, classes)
+    div(class=classes)
         if (data != undefinded)
             .breadcrumbs__list(itemscope itemtype="http://schema.org/BreadcrumbList")
                 - var position = 1

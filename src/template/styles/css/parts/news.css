@@ -1,0 +1,24 @@
+.news {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: -30px; }
+  .news__item {
+    background: #EEE;
+    border-radius: 30px;
+    width: calc( 100% / 2 - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    overflow: hidden; }
+  .news__date {
+    color: #AEAEAE;
+    line-height: 155%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 7px; }
+  .news__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    padding-bottom: 55px;
+    padding-left: 20px; }
